@@ -1,0 +1,26 @@
+.main-div-fiter {
+    width: 100%;
+    height: 100%;
+    padding: 10px 5px;
+
+}
+
+.sub-div-filter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 10fr;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.sortby {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filterby {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
