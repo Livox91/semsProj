@@ -4,17 +4,23 @@
     padding: 25px;
     display: flex;
     flex-direction: row;
-    overflow: auto;
+    flex-wrap: wrap;
 
 }
 
 .product-card {
-    width: 33%;
-    height: 100px;
-    background-color: blue;
-    color: white;
+    min-width: 33%;
+    height: 300px;
+
+    color: black;
     margin: .5rem;
+    margin-left: 3rem;
+    padding: 3rem;
     display: grid;
+}
+
+.element {
+    border: 2px solid black;
 }
 
 .title {

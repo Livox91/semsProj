@@ -1,8 +1,11 @@
 .main-pc {
-    width: 100%;
+    width: auto;
+    max-width: 25vw;
     height: 100%;
+    padding: .5rem;
     font-size: 0;
     line-height: 0;
+
 }
 
 img {
