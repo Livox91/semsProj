@@ -1,16 +1,15 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, map, tap } from 'rxjs';
+import { Observable, filter, map, tap } from 'rxjs';
 import { Product } from './product';
-
-
 
 @Injectable({
   providedIn: 'root'
 })
-export class ProductService {
-  private apiUrl = 'http://localhost:3000/';
+export class ProductsService {
+  public apiUrl = 'http://localhost:3000/';
   private productData: any[] = []
+
 
   constructor(private http: HttpClient) { }
 
@@ -26,9 +25,9 @@ export class ProductService {
     console.log(this.productData);
     return this.productData;
   }
-  fetchproduct(_id: number | string) {
-    return this.fetchproducts().pipe(
-      map((products: Product[]) => products.find(product => product._id === _id))
-    )
+
+  getProductId(): Observable<string[]> {
+    return this.fetchproducts().pipe(map(products => products.map(product => product._id)))
   }
+
 }

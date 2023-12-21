@@ -2,10 +2,10 @@
     <div *ngFor="let product of products" class="product-card">
         <div class="element">
             <div class="title">
-                <p>{{product.name}}</p>
+                <p>{{product | json}}</p>
             </div>
             <div class="btn">
-                <button class="button" routerLink="['/products',product._id]">Button</button>
+                <button (click)="gotoProductPage(product._id)" class="button">Button</button>
             </div>
         </div>
 

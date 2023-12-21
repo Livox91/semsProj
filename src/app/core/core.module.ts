@@ -4,13 +4,14 @@ import { ProductListComponent } from './components/product-list/product-list.com
 
 
 
+
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule, ProductListComponent
+    CommonModule, ProductListComponent,
   ],
   exports: [
-    ProductListComponent
+    ProductListComponent,
   ]
 })
 export class CoreModule { }
