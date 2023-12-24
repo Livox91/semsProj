@@ -21,11 +21,7 @@ export class ProductMainComponent implements OnInit {
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => { this.id = params.get('id') })
-    this.obeservable = this.productService.fetchproducts().pipe(map(products => products.filter(product => product._id === this.id)))
-    this.obeservable.subscribe((data: any) => {
-      this.product = data;
-      console.log(data);
-    })
-    this.category_id = this.product.category_id;
+    this.obeservable = this.productService.
+    
   }
 }
