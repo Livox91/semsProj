@@ -6,6 +6,7 @@ import { AboutComponent } from './components/about/about.component';
 
 
 
+
 @NgModule({
   declarations: [],
   imports: [
@@ -15,4 +16,6 @@ import { AboutComponent } from './components/about/about.component';
     HeaderComponent, AboutComponent
   ]
 })
-export class SharedModule { }
+export class SharedModule {
+
+}

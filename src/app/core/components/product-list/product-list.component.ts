@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProductService } from '@app/shared/services/product/product.service';
+import { ProductsService } from '@app/shared/services/products/product.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-product-list',
@@ -10,15 +11,16 @@ import { ProductService } from '@app/shared/services/product/product.service';
   styleUrl: './product-list.component.css'
 })
 export class ProductListComponent implements OnInit {
-
-
-  constructor(private productService: ProductService) { }
+  products: any = []
+  constructor(private productService: ProductsService) { }
 
   ngOnInit(): void {
-    this.productService.fetchproducts().subscribe((data: any[]) => {
-      this.productService.setProductData(data)
-    }
-    )
-  }
+    this.productService.fetchproducts().subscribe((data) => {
+      this.productService.setItemData(data.filter((_, index) => index !== 0)),
+        this.productService.setProductData(data.filter((_, index) => index !== 1))
+    });
 
+  }
 }
+
+
