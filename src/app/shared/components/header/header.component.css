@@ -40,40 +40,95 @@ a {
     justify-content: start;
 }
 
-.main-side-nav {
-    width: 100%;
-    height: 100%;
-    display: none;
-    padding: 1.5rem;
-}
-
-.side-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav {
+.sidebar{
+    font-family: 'Panchang', sans-serif;
     position: fixed;
-    top: 0;
-    left: 0;
+    left: -250px;
+    width: 250px;
     height: 100vh;
-    width: 40vw;
-    z-index: 2;
-    background-color: #302652;
+    background: #302652;
+    transition: all 0.5s ease-in-out;
+    display:none;
+ 
+}
+.sidebar header{
+    font-size: 22px;
+    color:#f2e6d7;
+    text-align: center;
+    line-height: 70px;
+    user-select: none;
+
+
+}
+.sidebar ul li{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 45px;
+    font-size: 20px;
+    color: #f2e6d7;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+
+}
+ul li:hover{
+    background: grey;
+}
+#check{
+    display: none;
+}
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 3px;
+    background: #f2e6d7;
+    display: none;
+}
+label #btn{
+    left:40px;
+    top: 25px;
+    font-size: 35px;
+    color:#302652;
+    padding:6px 12px;
+    transition: all .5s ease-in-out;
+    
+
+}
+label #cancel{
+    z-index: 1;
+    left:-195px;
+    top: 17px;
+    font-size: 30px;
+    color: #302652;
+    padding:4px 9px;
+    display:none;
+}
+#check:checked~.sidebar{
+    left:0;
+}
+#check:checked~label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+
+}
+#check:checked~ label #cancel{
+    left: 195px;
+  
 }
 
-img {
-    width: 3.5rem;
-    height: 3.5rem;
-}
+
+
 
 @media screen and (max-width:900px) {
     .nav-header {
         display: none;
     }
 
-    .main-side-nav {
+    label #btn, label #cancel ,.sidebar{
         display: block;
     }
 }
