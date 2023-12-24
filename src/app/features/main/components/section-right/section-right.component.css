@@ -1,50 +1,60 @@
 .main-section-right {
-    width: 100%;
+    width: 75vw;
     height: 100%;
     padding: 25px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    gap: 1.5rem;
+    font-family: "Renade", sans-serif;
 }
 
 .product-card {
-    min-width: 15vw;
-    max-width: 18vw;
-    min-height: 15vh;
-    max-height: 18vh;
-    border: 1px solid black;
-    margin: 1rem;
-    flex: 1 1;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+
+    padding: 30px 20px 15px;
+}
+
+.element img {
+    width: 100%;
+    aspect-ratio: 1/1;
+
 }
 
 .title {
-    font-size: .75rem;
-    font-family: "Alpino", sans-serif;
-    justify-self: center;
-    align-self: center;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    justify-content: start;
+
 }
 
-.button {
-    background-color: #04AA6D;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
+.element .title h3 {
+    color: #444;
+    font-size: 1.3rem;
+    padding: 10px 5px;
+}
+
+.element .title p {
+    font-size: 1.5rem;
+    padding: 10px 3px;
+
+}
+
+.element button {
+    top: 0;
+    right: 0;
+    margin: 5px;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    background-color: #fff;
     cursor: pointer;
 }
 
-@media screen and (max-width:900px) {
-    .product-card {
-        min-width: 22vw;
-        max-width: 32vw;
-        min-height: 22vh;
-        max-height: 32vh;
-        border: 1px solid black;
-        margin: 1rem;
-        flex: 1 1;
-    }
+/* .element button */
+
+.element button:hover {
+    background-color: #302652;
+    color: #fff;
+    transition: .2s;
 }

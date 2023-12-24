@@ -1,13 +1,13 @@
 <div class="main-section-right">
-    <div *ngFor="let product of products" class="product-card">
+    <div *ngFor="let item of display_items" class="product-card">
         <div class="element">
+            <img [src]="'data:image/png;base64,'+item.product.product_image" alt="">
             <div class="title">
-                <p>{{product | json}}</p>
+                <h3>{{item.product.name}}</h3>
+                <p>{{item.price}}</p>
+                <button (click)="gotoProductPage(item.product._id)" class="button">+</button>
             </div>
-            <div class="btn">
-                <button (click)="gotoProductPage(product._id)" class="button">Button</button>
-            </div>
-        </div>
 
+        </div>
     </div>
 </div>

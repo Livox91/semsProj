@@ -11,16 +11,16 @@ import { Observable } from 'rxjs';
   styleUrl: './product-list.component.css'
 })
 export class ProductListComponent implements OnInit {
-
-
+  products: any = []
   constructor(private productService: ProductsService) { }
 
   ngOnInit(): void {
-    this.productService.fetchproducts().subscribe((data: any[]) => {
-      this.productService.setProductData(data)
-    }
-    )
+    this.productService.fetchproducts().subscribe((data) => {
+      this.productService.setItemData(data.filter((_, index) => index !== 0)),
+        this.productService.setProductData(data.filter((_, index) => index !== 1))
+    });
 
   }
-
 }
+
+

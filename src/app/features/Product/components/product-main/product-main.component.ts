@@ -27,7 +27,5 @@ export class ProductMainComponent implements OnInit {
       console.log(data);
     })
     this.category_id = this.product.category_id;
-
-
   }
 }
