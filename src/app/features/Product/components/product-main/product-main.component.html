@@ -1,3 +1,21 @@
-<div *ngIf="product ">
-    <p>{{product | json}}</p>
+<app-header></app-header>
+<div class="product" *ngIf="product && product_data">
+    <div class="image">
+        <img [src]="'data:image/png;base64,'+product.product_image" alt="">
+    </div>
+    <div class="product-discrip">
+        <div class="title">
+            <h3 class="prod-title">{{product.name}}</h3>
+            <p class="description">{{product.description}}</p>
+            <p class="price"> {{product_data.price}}</p>
+            <p class="quantity">{{product_data.qty_instock}}</p>
+        </div>
+        <app-product-sub></app-product-sub>
+        <div class="add-to-cart">
+            <button>Add To Cart</button>
+        </div>
+    </div>
+
 </div>
+
+<app-abouts></app-abouts>

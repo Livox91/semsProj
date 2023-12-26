@@ -1,109 +1,130 @@
-*{
-    margin:0px;
-    padding:0px;
+* {
+    margin: 0px;
+    padding: 0px;
 }
-.section{
-   
+
+.section {
     box-sizing: border-box;
-    max-width:100% ;
+    max-width: 100%;
     min-height: 100vh;
-    background-color:#F2E6D7;;
+    background-color: #F2E6D7;
     font-family: 'Panchang', sans-serif;
-    font-weight: 200;
 }
-.container{
+
+.container {
     width: 80%;
     display: block;
-    margin:auto;
+    margin: auto;
     padding-top: 100px;
 }
-.content-area{
-    float:left;
-    width:55%;
+
+.content-area {
+    float: left;
+    width: 55%;
 }
-.image-section{
-    float:right;
-    width:30%;
+
+.image-section {
+    float: right;
+    width: 30%;
 }
-.image-section img{
-    width:100%;
-    height:auto;
+
+.image-section img {
+    width: 100%;
+    height: auto;
 }
+
 .content-area .title {
     color: #302652;
     text-transform: uppercase;
     font: size 38px;
 }
-.content-area .content h3{
+
+.content-area .content h3 {
     margin-top: 20px;
     font-size: 21px;
-    color: #302652;;
+    color: #302652;
+    font-weight: 400;
 }
-.content-area .content p{
-    margin-top:10px;
+
+.content-area .content p {
+    margin-top: 10px;
     font: size 18px;
-    line-height:1.5;
-    color:#302652
+    line-height: 1.5;
+    color: #302652
 }
-.content-area .content .button{
-    margin-top:30px;
+
+.content-area .content .button {
+    margin-top: 30px;
 }
-.content-area .content .button a{
-    background-color: #302652;;
-    padding:12px 40px;
+
+.content-area .content .button a {
+    background-color: #302652;
+    padding: 12px 40px;
     text-decoration: none;
-    color:#F2E6D7;
+    color: #F2E6D7;
     font-size: 25px;
     letter-spacing: 1.5px;
-
-
 }
-.content-area .content .button a:hover{
+
+.content-area .content .button a:hover {
     background-color: grey;
-    color:#fff
+    color: #fff
 }
-.content-area .social{
-    margin-top: 40px;
 
+.content-area .social {
+    margin-top: 40px;
 }
-.content-section .social i{
-    color:grey;
+
+.content-area .social a {
+    margin-left: 5px;
+}
+
+.content-section .social i {
+    color: grey;
     font-size: 30px;
-    padding:0px 10px;
+    padding: 0px 10px;
 }
-.content-area .social i:hover{
+
+.content-area .social i:hover {
     color: grey;
 }
-@media screen and (max-width:900px){
-    .container{
-        width:80% ;
-        display :block;
+
+@media screen and (max-width:900px) {
+    .container {
+        width: 80%;
+        display: block;
         margin: auto;
         padding-top: 50px;
     }
-    .content-area{
-        float:none;
-        width:100%;
-        display: block;
-        margin:auto;
-    }
-    .image-section{
-        float:none;
-        width:80%;
+
+    .content-area {
+        float: none;
+        width: 100%;
         display: block;
         margin: auto;
     }
-    .content-area .title{
+
+    .image-section {
+        float: none;
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    .content-area .title {
         text-align: center;
         font-size: 19px;
     }
-    .content-area .content .button{
+
+    .content-area .content .button {
         text-align: center;
     }
-    .content-area .content .button a{
-        padding:9px 30px;
+
+    .content-area .content .button a {
+        padding: 9px 30px;
     }
-    .content-area .social{
+
+    .content-area .social {
         text-align: center;
     }
 }

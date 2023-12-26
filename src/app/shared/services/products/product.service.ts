@@ -6,16 +6,18 @@ import { Product } from './product';
 @Injectable({
   providedIn: 'root'
 })
+
+
 export class ProductsService {
   public apiUrl = 'http://localhost:3000/';
-  private productData: any[] = []
+  private productData: any[] = [];
   private itemData: any[] = [];
 
 
   constructor(private http: HttpClient) { }
 
   fetchproducts(): Observable<any[]> {
-    return this.http.get<Product[]>(this.apiUrl)
+    return this.http.get<any[]>(this.apiUrl)
 
   }
 
@@ -31,7 +33,6 @@ export class ProductsService {
   }
 
   getItemData() {
-    console.log(this.itemData)
     return this.itemData;
   }
   getProductId(): Observable<string[]> {

@@ -40,7 +40,7 @@ a {
     justify-content: start;
 }
 
-.sidebar{
+.sidebar {
     font-family: 'Panchang', sans-serif;
     position: fixed;
     left: -250px;
@@ -48,19 +48,21 @@ a {
     height: 100vh;
     background: #302652;
     transition: all 0.5s ease-in-out;
-    display:none;
- 
+    display: none;
+
 }
-.sidebar header{
+
+.sidebar header {
     font-size: 22px;
-    color:#f2e6d7;
+    color: #f2e6d7;
     text-align: center;
     line-height: 70px;
     user-select: none;
 
 
 }
-.sidebar ul li{
+
+.sidebar ul li {
     display: block;
     height: 100%;
     width: 100%;
@@ -74,53 +76,56 @@ a {
     cursor: pointer;
 
 }
-ul li:hover{
-    background: grey;
-}
-#check{
+
+#check {
     display: none;
 }
-label #btn,label #cancel{
+
+label #btn,
+label #cancel {
     position: absolute;
     cursor: pointer;
     border-radius: 3px;
     background: #f2e6d7;
     display: none;
 }
-label #btn{
-    left:40px;
+
+label #btn {
+    left: 40px;
     top: 25px;
     font-size: 35px;
-    color:#302652;
-    padding:6px 12px;
+    color: #302652;
+    padding: 6px 12px;
     transition: all .5s ease-in-out;
-    
+
 
 }
-label #cancel{
+
+label #cancel {
     z-index: 1;
-    left:-195px;
+    left: -195px;
     top: 17px;
     font-size: 30px;
     color: #302652;
-    padding:4px 9px;
-    display:none;
+    padding: 4px 9px;
+    display: none;
 }
-#check:checked~.sidebar{
-    left:0;
+
+#check:checked~.sidebar {
+    left: 0;
 }
-#check:checked~label #btn{
+
+#check:checked~label #btn {
     left: 250px;
     opacity: 0;
     pointer-events: none;
 
 }
-#check:checked~ label #cancel{
+
+#check:checked~label #cancel {
     left: 195px;
-  
+
 }
-
-
 
 
 @media screen and (max-width:900px) {
@@ -128,7 +133,9 @@ label #cancel{
         display: none;
     }
 
-    label #btn, label #cancel ,.sidebar{
+    label #btn,
+    label #cancel,
+    .sidebar {
         display: block;
     }
 }
