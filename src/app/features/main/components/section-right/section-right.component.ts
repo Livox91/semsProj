@@ -26,7 +26,6 @@ export class SectionRightComponent implements OnInit {
     this.products = this.productService.getProductData()
     this.product_items = this.productService.getItemData()
     this.display_items = this.pushItemPrice(this.products, this.product_items, 'price', 'price')
-    console.log(this.display_items)
   }
 
   pushItemPrice(arr1: any[], arr2: any[], key: string, value: any): any[] {

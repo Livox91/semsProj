@@ -1,7 +1,7 @@
 .main {
     
     width: 100vw;
-    height: auto;
+
     display: grid;
     grid-template-areas: "hd hd hd hd hd hd hd hd "
         "crs crs crs crs crs crs crs crs"
@@ -47,14 +47,13 @@ app-section-left {
 }
 
 app-section-right {
-
     grid-area: sc1;
     min-width: 0;
     min-height: 0;
     max-height: auto;
 }
 
-app-about {
+app-abouts {
     grid-area: ab;
     min-width: 0;
     min-height: 0;

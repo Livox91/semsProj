@@ -1,0 +1,11 @@
+.product {
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-discrip {
+    width: 50%;
+    min-height: 80%;
+    border: 1px solid black;
+}

@@ -1,0 +1,7 @@
+<div class="Variation" *ngIf="category && variation">
+    <p class="variation-title">{{variation.variantname}}</p>
+    <p>{{category.category_name}}</p>
+</div>
+<div class="variation-options" *ngFor="let option of variationOp">
+    <p>{{option.variantopname}}</p>
+</div>
