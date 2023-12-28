@@ -1,64 +1,50 @@
 <link href="https://api.fontshare.com/v2/css?f[]=panchang@400&display=swap" rel="stylesheet">
 <div class="main-nav-div">
     <nav class="nav-header">
-        <div class="nav-section-left">
-            <ul class="nav-left">
-                <li><a href="/">Shop</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/products">Brand</a></li>
-            </ul>
+        <div class="nav-logo">
+            <a href="/">
+                <h3 class="font-color">UniWare</h3>
+            </a>
         </div>
         <div class="nav-section-right">
             <ul class="nav-right">
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Cart</a></li>
-                <li><a href="/">Search</a></li>
+                <li><a href="/" class="font-color">Home</a></li>
+                <li><a href="/about" class="font-color">About</a></li>
+                <li><a href="#" class="font-color">Shop</a></li>
+                <li><a href="#" class="font-color" (click)="showCart()">Cart</a></li>
+                <li><a href="/" class="font-color search-img"><img [src]="'data:image/png;base64,' +search_icon" alt=""
+                            width="25px" height="25px"></a></li>
             </ul>
+        </div>
+        <div class="nav-button">
+            <a class="nav-btn" (click)="showSideNav()"><img [src]="'data:img/png;base64,'+navbutton" alt="" width="25px"
+                    height="25px"></a>
         </div>
     </nav>
-    <div>
-        <input type="checkbox" id="check">
-        <label for="check"><i class="fas fa-bars" id="btn"></i>
-            <i class="fas fa-times" id="cancel"></i>
-        </label>
+    <div class="sidebar" *ngIf="isSideNavVisible">
+        <ul>
+            <li><a href="" class="font-color">Home</a></li>
+            <li><a href="/about" class="font-color">About</a></li>
+            <li><a href="#" class="font-color">Shop</a></li>
+            <li><a href="#" (click)="showCart()" class="font-color">Cart</a></li>
 
-        <div class="sidebar">
-            <ul>
-                <li><a href=""><i class=" "></i>Shop</a></li>
-                <li><a href=""><i class=" "></i>About</a></li>
-                <li><a href=""><i class=" "></i>Brand</a></li>
-                <li><a href=""><i class=" "></i>Home</a></li>
-                <li><a href=""><i class=" "></i>Cart</a></li>
-                <li><a href=""><i class=" "></i>Search</a></li>
-            </ul>
-        </div>
-                
+        </ul>
     </div>
-    <div><input type="checkbox" id="ccheck">
-    <label for="ccheck">
-      <i class="fas fa-shopping-cart"id="cart"></i>
-      <i class="fas fa-times"id="cancel-cart"></i>
-    </label>
-        
-    <div class="sidecart">
+    <div class="sidecart" *ngIf="isCartVisible">
         <div class="cart-content">
             <div class="cart-header">
-                <a href=""><i class="fas fa-shopping-cart"id="cart-logo"></i></a>
+                <a href=""><i class="fas fa-shopping-cart" id="cart-logo"></i></a>
                 <div class="header-title">
-                        <h2>Your Cart</h2>
-                        <span id="items-qty">5</span>
+                    <h2>Your Cart</h2>
                 </div>
             </div>
-        <div class="cart-items"></div>
-        <div class="cart-actions">
-            <div class="subtotal">
-                <p>SUBTOTAL</p>
+            <div class="cart-actions">
+                <div class="subtotal">
+                    <p>SUBTOTAL</p>
+                </div>
+                <button>View Cart</button>
+                <button>Checkout</button>
             </div>
-            <button>View Cart</button>
-            <button>Checkout</button>
-        </div>
         </div>
     </div>
-</div>
-    
 </div>

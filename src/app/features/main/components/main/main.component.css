@@ -1,5 +1,5 @@
 .main {
-    
+
     width: 100vw;
 
     display: grid;
@@ -7,10 +7,10 @@
         "crs crs crs crs crs crs crs crs"
         "crs crs crs crs crs crs crs crs"
         "fl fl fl fl fl fl fl fl"
-        "pc pc sc1 sc1 sc1 sc1 sc1 sc1"
-        "pc pc sc1 sc1 sc1 sc1 sc1 sc1"
-        "pc pc sc1 sc1 sc1 sc1 sc1 sc1"
-        "pc pc sc1 sc1 sc1 sc1 sc1 sc1"
+        "sc1 sc1 sc1 sc1 sc1 sc1 sc1 sc1"
+        "sc1 sc1 sc1 sc1 sc1 sc1 sc1 sc1"
+        "sc1 sc1 sc1 sc1 sc1 sc1 sc1 sc1"
+        "sc1 sc1 sc1 sc1 sc1 sc1 sc1 sc1"
         "ab ab ab ab ab ab ab ab ";
 }
 

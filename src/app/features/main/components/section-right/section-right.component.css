@@ -1,5 +1,5 @@
 .main-section-right {
-    width: 75vw;
+    width: 100%;
     height: 100%;
     padding: 25px;
     display: grid;
@@ -9,9 +9,9 @@
 }
 
 .product-card {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 5px #2d3250;
     border-radius: 5px;
-
+    background-color: #666699;
     padding: 30px 20px 15px;
 }
 
@@ -47,11 +47,10 @@
     width: 35px;
     height: 35px;
     font-size: 25px;
-    background-color: #fff;
+    background-color: #666699;
     cursor: pointer;
 }
 
-/* .element button */
 
 .element button:hover {
     background-color: #302652;
