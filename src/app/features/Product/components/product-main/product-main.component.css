@@ -1,11 +1,41 @@
-.product {
-    margin: 50px;
+.main {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 4rem;
 }
 
+.product {
+    display: flex;
+    flex-direction: row;
+}
+
+
 .product-discrip {
-    width: 50%;
-    min-height: 80%;
-    border: 1px solid black;
+    margin-left: 10rem;
+}
+
+.title h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffb17a;
+}
+
+.price {
+    font-size: 2rem;
+    color: #ffb17a;
+    margin-bottom: .75rem;
+}
+
+.description {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+}
+
+.quantity {
+    font-size: 1.2rem;
+}
+
+p span {
+    font-weight: 400;
+    font-size: 1.7rem;
 }

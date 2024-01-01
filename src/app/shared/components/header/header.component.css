@@ -1,11 +1,6 @@
-.font-color {
-    color: #ffb17a;
-}
-
 .main-nav-div {
     width: 100%;
     height: 8rem;
-    background-color: #2d3250;
     position: sticky;
     top: 0;
 }
@@ -151,8 +146,8 @@ a {
 .cart-actions button {
     font-family: 'Montserrat', sans-serif;
     border: none;
-    background-color: #f2e6d7;
-    color: #302652;
+    /* background-color: #f2e6d7;
+    color: #302652; */
     border-radius: 15px;
     padding: 10px;
     font-size: 14px;
@@ -164,6 +159,14 @@ a {
 .cart-actions button:hover {
     background-color: grey;
     color: #f2e6d7
+}
+
+.font-main-color {
+    color: #F6B17A;
+}
+
+.nav-header-main-color {
+    background-color: #424769;
 }
 
 @media screen and (max-width:900px) {

@@ -1,7 +1,5 @@
 .main {
-
     width: 100vw;
-
     display: grid;
     grid-template-areas: "hd hd hd hd hd hd hd hd "
         "crs crs crs crs crs crs crs crs"

@@ -1,10 +1,10 @@
-<div class="main-section-right">
-    <div *ngFor="let item of display_items" class="product-card">
+<div class="main-section-right main-section-right-main-color">
+    <div *ngFor="let item of display_items" class="product-card product-card-main-color">
         <div class="element">
             <img [src]="'data:image/png;base64,'+item.product.product_image" alt="">
             <div class="title">
-                <h3>{{item.product.name}}</h3>
-                <p>{{item.price}}</p>
+                <h3 class="font-h3 element-font-color">{{item.product.name}}</h3>
+                <p class="font-p element-font-color">{{item.price}}</p>
                 <button (click)="gotoProductPage(item.product._id)" class="button">+</button>
             </div>
 
