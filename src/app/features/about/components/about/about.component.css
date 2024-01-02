@@ -1,130 +1,147 @@
-* {
-    margin: 0px;
-    padding: 0px;
+*{
+    margin:0px;
+    padding:0px;
 }
-
-.section {
+.aboutus{
     box-sizing: border-box;
-    max-width: 100%;
+    max-width:100% ;
     min-height: 100vh;
-    background-color: #F2E6D7;
-    font-family: 'Panchang', sans-serif;
+    background-color:#2D3250;;
+    font-family:'Raleway', sans-serif;
 }
 
-.container {
-    width: 80%;
-    display: block;
-    margin: auto;
-    padding-top: 100px;
+.heading h1{
+    color:goldenrod;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    
 }
-
-.content-area {
-    float: left;
-    width: 55%;
-}
-
-.image-section {
-    float: right;
-    width: 30%;
-}
-
-.image-section img {
-    width: 100%;
-    height: auto;
-}
-
-.content-area .title {
-    color: #302652;
-    text-transform: uppercase;
-    font: size 38px;
-}
-
-.content-area .content h3 {
-    margin-top: 20px;
-    font-size: 21px;
-    color: #302652;
+.heading h4{
+    text-align: center;
+    color: #ffff;
     font-weight: 400;
 }
-
-.content-area .content p {
-    margin-top: 10px;
-    font: size 18px;
-    line-height: 1.5;
-    color: #302652
+.container{
+    width: 80%;
+    display: block;
+    margin:auto;
+    padding-top: 100px;
+}
+.content-area{
+    float:left;
+    width:55%;
+}
+.image-section{
+    float:right;
+    width:40%;
+    
+}
+.image-section img{
+    width:300px;
+    border-radius: 20px;
+    height:auto;
+    filter: drop-shadow(5px 5px 5px black);
+}
+.title {
+    
+    text-transform: uppercase;
+    font-size:  25px;
+    color:goldenrod;
+    font-weight: 600;
+}
+.content-area .content p{
+    color: #ffff;
+    margin-top:10px;
+    font-size: 20px;
+    line-height:1.5;
+   
+}
+.our-vision{
+    padding-top: 125px;
 }
 
-.content-area .content .button {
-    margin-top: 30px;
+
+.container-vision{
+    width: 80%;
+    display: block;
+    margin:auto;
+    padding-top: 100px;
+}
+.content-area-vision{
+    float:right;
+    width:55%;
+}
+.image-section-vision{
+    float:left;
+    width:45%;
+}
+.image-section-vision img{
+    width:300px;
+    height:auto;
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 5px black);
 }
 
-.content-area .content .button a {
-    background-color: #302652;
-    padding: 12px 40px;
-    text-decoration: none;
-    color: #F2E6D7;
-    font-size: 25px;
-    letter-spacing: 1.5px;
+.content-area-vision .content p{
+    margin-top:10px;
+    font-size:  20px;
+    line-height:1.5;
+    color: #ffff;
+    
 }
 
-.content-area .content .button a:hover {
-    background-color: grey;
-    color: #fff
-}
 
-.content-area .social {
-    margin-top: 40px;
-}
-
-.content-area .social a {
-    margin-left: 5px;
-}
-
-.content-section .social i {
-    color: grey;
-    font-size: 30px;
-    padding: 0px 10px;
-}
-
-.content-area .social i:hover {
-    color: grey;
-}
-
-@media screen and (max-width:900px) {
-    .container {
-        width: 80%;
-        display: block;
+@media screen and (max-width:990px){
+    .container{
+        width:80% ;
+        display :block;
         margin: auto;
         padding-top: 50px;
     }
-
-    .content-area {
-        float: none;
-        width: 100%;
+    .content-area{
+        float:none;
+        width:100%;
+        display: block;
+        margin:auto;
+        text-align: center;
+    }
+    .image-section{
+        padding-top: 40px;
+        float:none;
+        width:50%;
         display: block;
         margin: auto;
+        align-items: center;
     }
-
-    .image-section {
-        float: none;
-        width: 80%;
-        display: block;
-        margin: auto;
-    }
-
-    .content-area .title {
+    .title h2{
         text-align: center;
         font-size: 19px;
+        font-weight: 700 ;
     }
-
-    .content-area .content .button {
+    .container-vision{
+        width:80% ;
+        display :block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-area-vision{
+        float:none;
+        width:100%;
+        display: block;
         text-align: center;
+        margin:auto;
     }
-
-    .content-area .content .button a {
-        padding: 9px 30px;
+    .image-section-vision{
+        padding-top: 40px;
+        float:none;
+        width:50%;
+        display: block;
+        margin: auto;
+        align-items: center;
     }
-
-    .content-area .social {
-        text-align: center;
-    }
+    
+   
+    
 }
