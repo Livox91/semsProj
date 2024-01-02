@@ -1,9 +1,8 @@
 .main-crs {
     width: 100%;
     height: 75vh;
+
 }
-
-
 
 .slider-wrapper {
     position: relative;
@@ -18,9 +17,13 @@
     scroll-behavior: smooth;
 }
 
+
+
 .slider img {
     flex: 1 0 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: auto;
     scroll-snap-align: start;
-    object-fit: cover;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
 }

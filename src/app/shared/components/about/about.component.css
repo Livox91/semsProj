@@ -1,17 +1,18 @@
 .footer {
     width: 100vw;
     height: 100%;
-    background-color: #302652;
+    background-color: #2D3250;
     padding: 20px;
     text-align: center;
-
-
 }
 
 .about-dec {
-    color: #F2E6D7;
-    font-family: 'Alpino', sans-serif;
+    font-family: 'RaleWay', sans-serif;
     font-size: 1.5rem;
+}
+
+.font-color {
+    color: #F6B17A;
 }
 
 span {
@@ -20,5 +21,4 @@ span {
 
 .footer a {
     text-decoration: none;
-    color: white;
 }

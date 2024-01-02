@@ -1,24 +1,37 @@
 .main-section-right {
-    width: 75vw;
+    width: 100%;
     height: 100%;
     padding: 25px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
     gap: 1.5rem;
-    font-family: "Renade", sans-serif;
+    font-family: 'RaleWay', sans-serif;
+}
+
+.main-section-right-main-color {
+    background-image: linear-gradient(to bottom right, #404258, #474E68, #50577A, #6B728E);
+    /* background-color: #252B48; */
 }
 
 .product-card {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
     border-radius: 5px;
-
     padding: 30px 20px 15px;
+    /* border: 1px solid black; */
+    box-shadow: .2rem .3rem #2D3250;
+}
+
+.product-card-main-color {
+    background-color: #262A56;
 }
 
 .element img {
     width: 100%;
     aspect-ratio: 1/1;
 
+}
+
+.element-font-color {
+    color: #F6B17A;
 }
 
 .title {
@@ -29,15 +42,11 @@
 }
 
 .element .title h3 {
-    color: #444;
-    font-size: 1.3rem;
     padding: 10px 5px;
 }
 
 .element .title p {
-    font-size: 1.5rem;
     padding: 10px 3px;
-
 }
 
 .element button {
@@ -47,14 +56,22 @@
     width: 35px;
     height: 35px;
     font-size: 25px;
-    background-color: #fff;
     cursor: pointer;
+    background-color: #F6B17A
 }
 
-/* .element button */
 
 .element button:hover {
-    background-color: #302652;
-    color: #fff;
     transition: .2s;
+    background-color: white;
+    color: #F6B17A;
+}
+
+.font-h3 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.font-p {
+    font-size: 1.5rem;
 }

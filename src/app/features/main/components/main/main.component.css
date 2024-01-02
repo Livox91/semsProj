@@ -1,16 +1,14 @@
 .main {
-    
     width: 100vw;
-
     display: grid;
     grid-template-areas: "hd hd hd hd hd hd hd hd "
         "crs crs crs crs crs crs crs crs"
         "crs crs crs crs crs crs crs crs"
         "fl fl fl fl fl fl fl fl"
-        "pc pc sc1 sc1 sc1 sc1 sc1 sc1"
-        "pc pc sc1 sc1 sc1 sc1 sc1 sc1"
-        "pc pc sc1 sc1 sc1 sc1 sc1 sc1"
-        "pc pc sc1 sc1 sc1 sc1 sc1 sc1"
+        "sc1 sc1 sc1 sc1 sc1 sc1 sc1 sc1"
+        "sc1 sc1 sc1 sc1 sc1 sc1 sc1 sc1"
+        "sc1 sc1 sc1 sc1 sc1 sc1 sc1 sc1"
+        "sc1 sc1 sc1 sc1 sc1 sc1 sc1 sc1"
         "ab ab ab ab ab ab ab ab ";
 }
 
