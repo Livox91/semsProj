@@ -1,19 +1,19 @@
 <app-header></app-header>
-<div class="main">
-    <div class="product" *ngIf="product && product_data">
+<div class="main main-color">
+    <div class="product color-sec" *ngIf="product && product_data">
         <div class="image">
             <img [src]="'data:image/png;base64,'+product.product_image" alt="">
         </div>
         <div class="product-discrip">
             <div class="title">
-                <h3 class="prod-title">{{product.name}}</h3>
-                <p class="price"> {{product_data.price}}</p>
-                <p class="description">{{product.description}}</p>
-                <p class="quantity"> <span> Quantity Available: </span>{{product_data.qty_instock}}</p>
+                <h3 class="prod-title font-Heading font-color">{{product.name}}</h3>
+                <app-product-sub></app-product-sub>
+                <p class="price font-Heading font-color"> <span>Price: </span>{{product_data.price}}</p>
+                <p class="description font font-color">{{product.description}}</p>
+                <p class="quantity font font-color"> <span> Quantity Available: </span>{{product_data.qty_instock}}</p>
             </div>
-            <app-product-sub></app-product-sub>
             <div class="add-to-cart">
-                <button>Add To Cart</button>
+                <button (click)="AddtoCart()">Add To Cart</button>
             </div>
         </div>
     </div>

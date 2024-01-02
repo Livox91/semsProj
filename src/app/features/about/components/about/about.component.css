@@ -1,147 +1,171 @@
-*{
-    margin:0px;
-    padding:0px;
-}
-.aboutus{
+.aboutus {
     box-sizing: border-box;
-    max-width:100% ;
+    max-width: 100%;
     min-height: 100vh;
-    background-color:#2D3250;;
-    font-family:'Raleway', sans-serif;
+    background-image: linear-gradient(to bottom right, #404258, #474E68, #50577A, #6B728E);
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    z-index: -1;
 }
 
-.heading h1{
-    color:goldenrod;
+.font-color-heading {
+    color: #F6B17A;
+}
+
+.font-color {
+    color: #ffff;
+}
+
+.heading h1 {
     padding-top: 25px;
     text-align: center;
     font-size: 60px;
     font-weight: 700;
-    
+
 }
-.heading h4{
+
+.heading h4 {
     text-align: center;
-    color: #ffff;
     font-weight: 400;
 }
-.container{
+
+.container {
     width: 80%;
     display: block;
-    margin:auto;
+    margin: auto;
     padding-top: 100px;
 }
-.content-area{
-    float:left;
-    width:55%;
+
+.content-area {
+    float: left;
+    width: 55%;
 }
-.image-section{
-    float:right;
-    width:40%;
-    
+
+.image-section {
+    position: relative;
+
+    float: right;
+    width: 40%;
+
 }
-.image-section img{
-    width:300px;
+
+.image-section img {
+    width: 300px;
     border-radius: 20px;
-    height:auto;
+    height: auto;
     filter: drop-shadow(5px 5px 5px black);
 }
+
 .title {
-    
+
     text-transform: uppercase;
-    font-size:  25px;
-    color:goldenrod;
+    font-size: 25px;
+
     font-weight: 600;
 }
-.content-area .content p{
-    color: #ffff;
-    margin-top:10px;
+
+.content-area .content p {
+
+    margin-top: 10px;
     font-size: 20px;
-    line-height:1.5;
-   
+    line-height: 1.5;
+
 }
-.our-vision{
+
+.our-vision {
     padding-top: 125px;
 }
 
 
-.container-vision{
+.container-vision {
     width: 80%;
     display: block;
-    margin:auto;
+    margin: auto;
     padding-top: 100px;
 }
-.content-area-vision{
-    float:right;
-    width:55%;
+
+.content-area-vision {
+    float: right;
+    width: 55%;
 }
-.image-section-vision{
-    float:left;
-    width:45%;
+
+.image-section-vision {
+    z-index: -1;
+    float: left;
+    width: 45%;
 }
-.image-section-vision img{
-    width:300px;
-    height:auto;
+
+.image-section-vision img {
+    width: 300px;
+    height: auto;
     border-radius: 20px;
     filter: drop-shadow(5px 5px 5px black);
 }
 
-.content-area-vision .content p{
-    margin-top:10px;
-    font-size:  20px;
-    line-height:1.5;
+.content-area-vision .content p {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 1.5;
     color: #ffff;
-    
+
 }
 
 
-@media screen and (max-width:990px){
-    .container{
-        width:80% ;
-        display :block;
+@media screen and (max-width:990px) {
+    .container {
+        width: 80%;
+        display: block;
         margin: auto;
         padding-top: 50px;
     }
-    .content-area{
-        float:none;
-        width:100%;
+
+    .content-area {
+        float: none;
+        width: 100%;
         display: block;
-        margin:auto;
+        margin: auto;
         text-align: center;
     }
-    .image-section{
+
+    .image-section {
         padding-top: 40px;
-        float:none;
-        width:50%;
+        float: none;
+        width: 50%;
         display: block;
         margin: auto;
         align-items: center;
     }
-    .title h2{
+
+    .title h2 {
         text-align: center;
         font-size: 19px;
-        font-weight: 700 ;
+        font-weight: 700;
     }
-    .container-vision{
-        width:80% ;
-        display :block;
+
+    .container-vision {
+        width: 80%;
+        display: block;
         margin: auto;
         padding-top: 50px;
     }
-    .content-area-vision{
-        float:none;
-        width:100%;
+
+    .content-area-vision {
+        float: none;
+        width: 100%;
         display: block;
         text-align: center;
-        margin:auto;
+        margin: auto;
     }
-    .image-section-vision{
+
+    .image-section-vision {
         padding-top: 40px;
-        float:none;
-        width:50%;
+        float: none;
+        width: 50%;
         display: block;
         margin: auto;
         align-items: center;
     }
-    
-   
-    
+
+
+
 }

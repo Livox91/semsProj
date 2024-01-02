@@ -50,6 +50,7 @@ ul {
 ul li {
     display: inline;
     flex-direction: row;
+    cursor: pointer;
 }
 
 a {

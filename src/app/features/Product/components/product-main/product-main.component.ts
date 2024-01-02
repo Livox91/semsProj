@@ -24,7 +24,9 @@ export class ProductMainComponent implements OnInit {
 
 
   constructor(private route: ActivatedRoute, private productService: ProductsService, private productInfo: ProductVariationService) { }
-
+  AddtoCart(): void {
+    window.alert('Added To Cart');
+  }
   ngOnInit(): void {
 
     this.route.paramMap.subscribe(params => { this.id = params.get('id') })

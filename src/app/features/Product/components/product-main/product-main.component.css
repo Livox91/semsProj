@@ -1,41 +1,99 @@
 .main {
-    display: flex;
-    justify-content: center;
-    margin: 4rem;
+    width: 100%;
+    min-height: 80vh;
+    display: grid;
+}
+
+.main-color {
+    background-image: linear-gradient(to bottom right, #404258, #474E68, #50577A, #6B728E);
+}
+
+.color-sec {
+    background-color: #262A56;
+}
+
+.font-color {
+    color: #F6B17A;
+}
+
+.font-Heading {
+    font-family: 'RaleWay', sans-serif;
+}
+
+.font {
+    font-family: "Montserrat", sans-serif;
 }
 
 .product {
-    display: flex;
-    flex-direction: row;
+    margin: 3rem;
+    width: 60%;
+    min-height: 80%;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    padding: 2rem;
+    gap: 1rem;
+    border-radius: 10px;
+    box-shadow: 1rem .5rem #2D3250;
 }
 
+.image {
+    justify-self: center;
+    align-self: center;
+}
 
 .product-discrip {
-    margin-left: 10rem;
+    justify-self: center;
+    align-self: center;
 }
 
 .title h3 {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     margin-bottom: 1rem;
-    color: #ffb17a;
 }
 
 .price {
     font-size: 2rem;
-    color: #ffb17a;
-    margin-bottom: .75rem;
+    margin-bottom: 1rem;
 }
 
 .description {
-    font-family: "Montserrat", sans-serif;
+    color: #ffff;
     font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .quantity {
     font-size: 1.2rem;
+    margin-bottom: .75rem;
 }
 
 p span {
+    color: #ffff;
     font-weight: 400;
     font-size: 1.7rem;
+}
+
+.add-to-cart {
+    margin-top: 1rem;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    box-shadow: .3rem .2rem black;
+    outline: 0;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    font-size: 18px;
+}
+
+
+@media screen and (width:900px) {
+    .title {
+        justify-content: center;
+    }
 }

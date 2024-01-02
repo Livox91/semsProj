@@ -9,8 +9,8 @@
             <ul class="nav-right">
                 <li><a href="/" class="font-main-color">Home</a></li>
                 <li><a href="/about" class="font-main-color">About</a></li>
-                <li><a href="#" class="font-main-color">Shop</a></li>
-                <li><a href="#" class="font-main-color" (click)="showCart()">Cart</a></li>
+                <li><a href="/" class="font-main-color">Shop</a></li>
+                <li><a class="font-main-color" (click)="showCart()">Cart</a></li>
                 <li><a href="/" class="font-main-color search-img"><img [src]="'data:image/png;base64,' +search_icon"
                             alt="" width="25px" height="25px"></a></li>
             </ul>
@@ -22,10 +22,10 @@
     </nav>
     <div class="sidebar sidebar-main-color" *ngIf="isSideNavVisible">
         <ul>
-            <li><a href="" class="font-main-color">Home</a></li>
+            <li><a href="/" class="font-main-color">Home</a></li>
             <li><a href="/about" class="font-main-color">About</a></li>
             <li><a href="#" class="font-main-color">Shop</a></li>
-            <li><a href="#" (click)="showCart()" class="font-main-color">Cart</a></li>
+            <li><a (click)="showCart()" class="font-main-color">Cart</a></li>
 
         </ul>
     </div>
@@ -37,7 +37,9 @@
                     <h2 class="font-main-color">Your Cart</h2>
                 </div>
             </div>
-            <div class="items"></div>
+            <div class="items">
+                <p></p>
+            </div>
             <div class="cart-actions">
                 <div class="subtotal">
                     <p class="font-main-color">SUBTOTAL</p>
