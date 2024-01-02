@@ -8,6 +8,10 @@
     z-index: -1;
 }
 
+.main {
+    padding: 2rem;
+}
+
 .font-color-heading {
     color: #F6B17A;
 }

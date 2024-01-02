@@ -18,9 +18,10 @@ export class HeaderComponent {
 
   public showSideNav(): void {
     this.isSideNavVisible = !this.isSideNavVisible
+    this.isCartVisible = false;
   }
   public showCart() {
-    console.log("hello")
+    this.isSideNavVisible = false;
     this.isCartVisible = !this.isCartVisible;
   }
 }
