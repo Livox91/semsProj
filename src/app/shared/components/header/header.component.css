@@ -1,3 +1,8 @@
+.font-main-color {
+    font-family: 'Montserrat', sans-serif;
+    color: #F6B17A;
+}
+
 .main-nav-div {
     width: 100%;
     height: 8rem;
@@ -10,6 +15,10 @@
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.nav-header-main-color {
+    background-color: #424769;
 }
 
 .nav-logo {
@@ -47,7 +56,6 @@ a {
     display: inline-block;
     padding: 1rem;
     font-size: 2rem;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     text-transform: capitalize;
     text-decoration: none;
@@ -74,15 +82,20 @@ a {
     position: fixed;
     top: 80px;
     right: 0px;
-    font-family: 'Raleway', sans-serif;
     width: 250px;
     height: 100%;
-    background: #302652;
+
+}
+
+.sidebar-main-color {
+    background-image: linear-gradient(to left, #404258, #474E68);
 }
 
 .sidebar ul {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-items: space-between;
 }
 
 .sidebar ul li a {
@@ -101,13 +114,18 @@ a {
     left: 0;
     width: 250px;
     height: 100%;
-    background: #302652;
-    font-family: 'Raleway', sans-serif;
+}
+
+.sidecart-main-color {
+    background-image: linear-gradient(to right, #404258, #474E68);
 }
 
 .cart-content {
+    height: 88%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cart-header {
@@ -119,9 +137,10 @@ a {
 
 }
 
-.header-title {
-    position: relative;
-    color: #f2e6d7
+.items {
+    width: 100%;
+
+
 }
 
 .cart-actions {
@@ -144,10 +163,8 @@ a {
 }
 
 .cart-actions button {
-    font-family: 'Montserrat', sans-serif;
-    border: none;
-    /* background-color: #f2e6d7;
-    color: #302652; */
+    background-color: #f2e6d7;
+    color: #302652;
     border-radius: 15px;
     padding: 10px;
     font-size: 14px;
@@ -161,12 +178,10 @@ a {
     color: #f2e6d7
 }
 
-.font-main-color {
-    color: #F6B17A;
-}
-
-.nav-header-main-color {
-    background-color: #424769;
+@media screen and (min-width:900px) {
+    .sidebar {
+        display: none;
+    }
 }
 
 @media screen and (max-width:900px) {
