@@ -30,8 +30,8 @@ Before getting started with the project, ensure you have the following prerequis
 
 - Node.js: Make sure Node.js is installed on your system.
 - Angular CLI: Install the Angular CLI globally using the command `npm install -g @angular/cli`.
-- <sub><sup><span style = "color:red">**DISCLAIMER**</span></sup></sub> Server is Necessary for the use of the application Since The database is stored Locally.
-  Not Having The Database will Cuase the products to not display.
+- <sub><sup><span style = "color:red">**DISCLAIMER**</span></sup></sub> Server is Necessary for the use of the application Install The Server From [Here](https://github.com/Livox91/SemsProjServer).
+  Not Having The Server will Cause the products to not display.
 
 These prerequisites are essential for a smooth setup and development experience.
 
