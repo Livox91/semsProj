@@ -1,5 +1,5 @@
 # Semester Project 
-This is Our ICT Semester Project. It is an Book Store Web-Application Built on MEAN Stack.
+This is Our ICT Semester Project. It is a Book Store Web-Application Built on MEAN Stack.
 
 ## Table of Content
 
