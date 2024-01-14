@@ -37,8 +37,7 @@ export class ProductMainComponent implements OnInit {
 
     this.productInfo.fetchProductData(this.categoryid).subscribe((data) => {
       this.productInfo.setCategory(data.filter((_, index) => index === 0).pop())
-      this.productInfo.setVariation(data.filter((_, index) => index === 1).pop()),
-        this.productInfo.setVarOp(data.filter((_, index) => index === 2).pop());
+
     });
 
   }

@@ -22,8 +22,7 @@ export class ProductSubComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.categorySub = this.productInfo.productCat$.subscribe((data) => this.category = data)
-    this.varSub = this.productInfo.productVar$.subscribe((data) => this.variation = data)
-    this.varOpSub = this.productInfo.productVarOp$.subscribe((data) => this.variationOp = data)
+
   }
   ngOnDestroy() {
     this.categorySub.unsubscribe();
